@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+<main class="container">
+    <article class="grid">
+        <div>
+            <h1>Création de compte</h1>
+            <form method="post" action="create-account.php">
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email">
+
+                <label for="password">Mot de passe</label>
+                <input id="password" type="password" name="password">
+
+                <fieldset>
+                    <label for="terms">
+                        <input id="terms" type="checkbox" role="switch" name="terms">
+                        J'accepte les <a href="#">conditions d'utilisation</a>
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="contrast">Créer mon compte</button>
+            </form>
+        </div>
+    </article>
+</main>
+</body>
+</html>
